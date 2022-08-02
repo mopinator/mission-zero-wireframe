@@ -1,0 +1,111 @@
+.search {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-image: url(../images/search-bar/broken_glass.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 60vh;
+}
+
+.search h1 {
+	width: 30%;
+	padding: 0 0 0 5rem;
+	font-size: 3rem;
+}
+
+.search-inputs {
+	display: flex;
+	justify-content: center;
+	/* padding-top: 20rem; */
+	/* padding: 1rem; */
+}
+
+.input-box {
+	font-size: 1.1em;
+	width: 25%;
+	line-height: 3rem;
+	padding: 0.2rem 1rem;
+	border: 2px solid rgb(80, 80, 80);
+	border-radius: 5px;
+}
+
+.search-button {
+	font-size: 1.1em;
+	font-weight: 600;
+	color: white;
+	background-color: #7392b7;
+	border: 2px solid rgb(80, 80, 80);
+	border-radius: 5px;
+	width: 9rem;
+	cursor: pointer;
+}
+
+@media (max-width: 768px) {
+	.search {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-image: url(../images/search-bar/broken_glass.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 60vh;
+	}
+
+	.search h1 {
+		text-align: center;
+		width: 60%;
+		padding: 0 0 0 0rem;
+		font-size: 3rem;
+		text-shadow: 1px 1px white;
+	}
+
+	.search-inputs {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.input-box {
+		font-size: 1.1em;
+		width: 50%;
+		line-height: 2.5rem;
+		padding: 0.2rem 1rem;
+		border: 2px solid rgb(80, 80, 80);
+		border-radius: 5px;
+	}
+
+	.search-button {
+		font-size: 1.1em;
+		font-weight: 600;
+		color: white;
+		background-color: #7392b7;
+		border: 2px solid rgb(80, 80, 80);
+		border-radius: 5px;
+		width: 9rem;
+		cursor: pointer;
+	}
+}
+
+@media (max-width: 425px) {
+	.search-inputs {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	.input-box {
+		width: 65%;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+}
+
+@media (max-width: 375px) {
+	.search h1 {
+		width: 80%;
+	}
+}

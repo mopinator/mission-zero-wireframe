@@ -1,0 +1,134 @@
+.container {
+	display: flex;
+	background-color: #7392b7;
+	padding: 1rem;
+	overflow: hidden;
+}
+
+.company-container {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	gap: 0.5rem;
+}
+
+.cardano {
+	width: 6rem;
+	align-items: baseline;
+	border-radius: 50%;
+}
+
+.company-container-p {
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+	color: rgb(255, 255, 255);
+}
+
+/* navigation */
+
+.primary-navigation-mobile {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 50%;
+	gap: 4rem;
+	margin: 0 4rem 0 0;
+	padding: 0 2rem 0 0;
+}
+
+.nav-list-desktop {
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	letter-spacing: 0.15rem;
+	color: rgb(255, 255, 255);
+	font-size: 1.2rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.login-button {
+	letter-spacing: 0.15rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+	padding: 0.4rem 2.5rem;
+	background-color: transparent;
+	border: 2px solid rgb(80, 80, 80);
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.nav-wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	color: white;
+}
+
+.mobile-nav-toggle {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.primary-navigation-desktop {
+		display: none;
+	}
+
+	.primary-navigation-mobile {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		gap: 0;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+		background-color: #7392b7;
+		top: 3.5rem;
+		right: 0;
+		position: absolute;
+	}
+
+	.nav-list-mobile {
+		display: block;
+		align-items: center;
+		gap: 0rem;
+	}
+
+	li {
+		padding: 0.4rem 2.5rem;
+		letter-spacing: 0.15rem;
+		color: rgb(255, 255, 255);
+		font-size: 1.2rem;
+		font-weight: 600;
+		cursor: pointer;
+	}
+
+	.mobile-nav-toggle {
+		display: block;
+		cursor: pointer;
+		background-color: transparent;
+		border: none;
+	}
+
+	.login-button {
+		letter-spacing: 0.15rem;
+		font-size: 1.2rem;
+		font-weight: 600;
+		padding: 0.4rem 2.5rem;
+		background-color: transparent;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		text-align: left;
+	}
+}
