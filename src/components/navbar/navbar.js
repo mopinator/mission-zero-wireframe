@@ -2,8 +2,6 @@ import styles from "./navbar.module.css";
 import hamburgerIcon from "../images/navbar-images/icon-hamburger.svg";
 import closeIcon from "../images/navbar-images/icon-close.svg";
 import { useState } from "react";
-import { motion } from "framer-motion";
-// import cardano from "../images/navbar images/cardano_2.jpg";
 
 export default function Navbar() {
 	const [openNavbar, setOpenNavbar] = useState(false);
@@ -14,7 +12,7 @@ export default function Navbar() {
 				<div className={styles["nav-wrapper"]}>
 					<div className={styles["company-container"]}>
 						<a href="/">
-							<img className={styles.cardano} src="" alt="img" />
+							<img src="" alt="img" />
 						</a>
 						<p className={styles["company-container-p"]}>Company</p>
 					</div>
@@ -35,7 +33,7 @@ export default function Navbar() {
 							<li>Menu2</li>
 							<li>Menu1</li>
 							<li>Menu3</li>
-							<li className={styles["login-button"]}>Login</li>
+							<li className={styles["login-button-desktop"]}>Login</li>
 						</ul>
 					</nav>
 				</div>
@@ -46,7 +44,7 @@ export default function Navbar() {
 						<li>Menu1</li>
 						<li>Menu2</li>
 						<li>Menu3</li>
-						<li className={styles["login-button"]}>Login</li>
+						<li className={styles["login-button-mobile"]}>Login</li>
 					</ul>
 				</nav>
 			)}

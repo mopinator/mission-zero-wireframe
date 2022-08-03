@@ -12,12 +12,6 @@
 	gap: 0.5rem;
 }
 
-.cardano {
-	width: 6rem;
-	align-items: baseline;
-	border-radius: 50%;
-}
-
 .company-container-p {
 	text-align: center;
 	font-size: 1.2rem;
@@ -56,7 +50,14 @@ li {
 	cursor: pointer;
 }
 
-.login-button {
+li:nth-child(1):hover,
+li:nth-child(2):hover,
+li:nth-child(3):hover {
+	color: #d8e1e9;
+	border-bottom: 2px solid #d8e1e9;
+}
+
+.login-button-desktop {
 	letter-spacing: 0.15rem;
 	font-size: 1.2rem;
 	font-weight: 600;
@@ -67,6 +68,10 @@ li {
 	cursor: pointer;
 }
 
+.login-button-desktop:hover {
+	color: #d8e1e9;
+}
+
 .nav-wrapper {
 	display: flex;
 	justify-content: space-between;
@@ -75,6 +80,10 @@ li {
 }
 
 .mobile-nav-toggle {
+	display: none;
+}
+
+.primary-navigation-mobile {
 	display: none;
 }
 
@@ -102,6 +111,7 @@ li {
 		display: block;
 		align-items: center;
 		gap: 0rem;
+		padding-bottom: 1rem;
 	}
 
 	li {
@@ -120,7 +130,7 @@ li {
 		border: none;
 	}
 
-	.login-button {
+	.login-button-mobile {
 		letter-spacing: 0.15rem;
 		font-size: 1.2rem;
 		font-weight: 600;
@@ -130,5 +140,11 @@ li {
 		border-radius: 5px;
 		cursor: pointer;
 		text-align: left;
+	}
+	.login-button-mobile:hover {
+		color: #d8e1e9;
+		border: 0;
+		border-bottom: 2px solid #d8e1e9;
+		border-radius: 0;
 	}
 }
