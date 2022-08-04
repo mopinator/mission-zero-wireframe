@@ -9,12 +9,12 @@ export default function Cards() {
 			<div className={styles["cards"]}>
 				<img src={mango} alt="" />
 				<h3>Mango Sticky Rice</h3>
-				<p>Plated dessert</p>
+				<p>Revist of Thai mango sticky rice</p>
 			</div>
 			<div className={styles["cards"]}>
 				<img src={brownie} alt="" />
 				<h3>Chocolate Bronwie</h3>
-				<p>Plated dessert</p>
+				<p>Salted caramel, chocolate supreme, sesame brittle, chocolate shortbread</p>
 			</div>
 			<div className={styles["cards"]}>
 				<img src={entremet} alt="" />

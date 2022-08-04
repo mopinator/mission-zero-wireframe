@@ -1,6 +1,7 @@
 import styles from "./navbar.module.css";
 import hamburgerIcon from "../images/navbar-images/icon-hamburger.svg";
 import closeIcon from "../images/navbar-images/icon-close.svg";
+import donut from "../images/navbar-images/donut_icon.jpg";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -11,10 +12,8 @@ export default function Navbar() {
 			<div className={styles.container}>
 				<div className={styles["nav-wrapper"]}>
 					<div className={styles["company-container"]}>
-						<a href="/">
-							<img src="" alt="img" />
-						</a>
-						<p className={styles["company-container-p"]}>Company</p>
+						<img className={styles["donut-icon"]} src={donut} alt="img" />
+						<p className={styles["company-container-p"]}>Doughboy</p>
 					</div>
 					<button
 						onClick={() => {
@@ -30,9 +29,9 @@ export default function Navbar() {
 					</button>
 					<nav className={styles["primary-navigation-desktop"]}>
 						<ul className={styles["nav-list-desktop"]}>
-							<li>Menu2</li>
-							<li>Menu1</li>
-							<li>Menu3</li>
+							<li>Menu</li>
+							<li>Recipes</li>
+							<li>About us</li>
 							<li className={styles["login-button-desktop"]}>Login</li>
 						</ul>
 					</nav>
@@ -41,9 +40,9 @@ export default function Navbar() {
 			{openNavbar && (
 				<nav className={styles["primary-navigation-mobile"]}>
 					<ul className={styles["nav-list-mobile"]}>
-						<li>Menu1</li>
-						<li>Menu2</li>
-						<li>Menu3</li>
+						<li>Menu</li>
+						<li>Recipes</li>
+						<li>About us</li>
 						<li className={styles["login-button-mobile"]}>Login</li>
 					</ul>
 				</nav>
