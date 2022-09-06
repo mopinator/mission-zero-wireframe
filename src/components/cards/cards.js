@@ -19,7 +19,7 @@ export default function Cards() {
 			<div className={styles["cards"]}>
 				<img src={entremet} alt="" />
 				<h3>Entremet</h3>
-				<p>What is your favorite Entremet?</p>
+				<p>What is your favorite Entremet??</p>
 			</div>
 		</div>
 	);
