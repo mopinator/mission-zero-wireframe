@@ -20,7 +20,7 @@ export default function Cards() {
 				<img src={entremet} alt="" />
 				<h3>Entremet</h3>
 				<p>What is your favorite Entremet??</p>
-				<p>testing docker ci/cd</p>
+				<p>testing docker ci/cd please work</p>
 			</div>
 		</div>
 	);
